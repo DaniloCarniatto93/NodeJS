@@ -1,7 +1,6 @@
 var mysql = require('mysql');
 
 var connectMYSQL = function (){
-	console.log("agora estou conectndo");
 	return mysql.createConnection({
 			host : 'localhost',
 			user : 'root',
@@ -12,6 +11,5 @@ var connectMYSQL = function (){
 
 //wrapper
 module.exports = function(){
-	console.log("express load chamou");
 	return connectMYSQL;
 }
