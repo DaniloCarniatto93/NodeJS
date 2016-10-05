@@ -9,12 +9,12 @@ module.exports = function(){
 var app = express();
 	app.set('view engine','ejs');
 	app.set('views','./app/views');
-	app.set('imagens','./app/imagens');
+	//app.set('imagens','./app/imagens');
 
 	app.use(bodyParser.urlencoded({extended:true}));
 	app.use(bodyParser.json());
 	app.use(expressValidator());
-	//app.use(bootstrap.serve);
+//	app.use(bootstrap.serve);
 
 
 	load('routes',{cwd:'app'})
