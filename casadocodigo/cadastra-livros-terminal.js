@@ -20,7 +20,7 @@ var client = http.request(configuracoes,function(res){
 
 var produto = {
 	titulo:'mais sobre node',
-	descricao:'',
+	descricao:'dasd',
 	preco: 100
 };
 
